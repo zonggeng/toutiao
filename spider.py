@@ -75,7 +75,6 @@ def parse_page_detail(html,url):
                 'url' : url ,
                 'images' : images
             }
-        print('111')
 
 def save_to_mongo(result):
     if db[MONGO_TABLE].insert(result):
